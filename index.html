@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generate Qr Code</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Qr Code Generator</h1>
+    </div>
+  </header>
+  <section>
+    <div>
+      <h2>Qr Code Generator</h1>
+      <input type="text" placeholder="Url (https)" id="url" >
+      <input type="number" placeholder="Height in px" id="height">
+      <input type="number" placeholder="Width in px" id="width">
+      <input type="color" id="color">
+      <input type="button" value="Generate" id="btn">
+    </div>
+    <div id="qrcode">
+      <i class="fa fa-spinner"></i>
+      <div id="qr">
+        
+      </div>
+      <button id="save-btn"><a href="" id="save">Save Image</a></button>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+</html>
